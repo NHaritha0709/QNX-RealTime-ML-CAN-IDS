@@ -1,0 +1,14 @@
+QNX CAN Bus IDS Feature List
+SREC Batch 3EC13
+==================================================
+1. CAN_ID_int
+2. DLC_int
+3. inter_arrival
+4. payload_DATA0
+5. payload_DATA1
+6. payload_DATA2
+7. payload_DATA3
+8. payload_DATA4
+9. payload_DATA5
+10. payload_DATA6
+11. payload_DATA7

@@ -1,0 +1,60 @@
+CAN Bus Intrusion Detection System
+SREC Batch 3EC13
+============================================================
+
+DATASET INFORMATION
+----------------------------------------
+Dataset 1: DoS_dataset.csv
+Dataset 2: Fuzzy_dataset.csv
+Total parsed frames: 7,504,631
+Total ML samples: 100,000
+
+LABEL INFORMATION
+----------------------------------------
+R = Normal = 0
+T = Attack = 1
+Normal frames: 85,617
+Attack frames: 14,383
+
+FEATURE INFORMATION
+----------------------------------------
+Number of features: 11
+1. CAN_ID_int
+2. DLC_int
+3. inter_arrival
+4. payload_DATA0
+5. payload_DATA1
+6. payload_DATA2
+7. payload_DATA3
+8. payload_DATA4
+9. payload_DATA5
+10. payload_DATA6
+11. payload_DATA7
+
+DECISION TREE
+----------------------------------------
+Accuracy: 99.69%
+ROC-AUC: 0.9952
+Training time: 0.436 seconds
+Tree depth: 8
+Leaf nodes: 20
+
+KNN
+----------------------------------------
+Accuracy: 99.67%
+Training time: 0.160 seconds
+K value: 5
+Metric: Euclidean
+KNN training samples: 20,000
+
+QNX DEPLOYMENT
+----------------------------------------
+Selected model: Decision Tree
+C classifier: dt_classifier.c
+Classification:
+  0 = NORMAL
+  1 = ATTACK
+
+NOTE:
+The C classifier was generated directly from the trained Decision Tree.
+The QNX implementation must reproduce the same feature extraction used during training.

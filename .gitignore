@@ -1,0 +1,21 @@
+# Build output
+build/
+*.o
+*.out
+*.exe
+
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# IDE / OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local datasets and generated large files
+data/
+*.csv
